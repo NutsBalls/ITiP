@@ -52,8 +52,8 @@ public class Task {
         System.out.println(tables(123, 58));
     }
 
-    public static double convert(float n) {
-        return 3.78541 * n;
+    public static double convert(int n) {
+        return 3.785 * n;
     }
 
     public static int fitCalc(int x, int y) {
