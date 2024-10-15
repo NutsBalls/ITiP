@@ -60,7 +60,7 @@ public class HashTable<K, V> {
                 }
             }
         }
-        return null; // Возвращаем null, если ключ не найден
+        return null;
     }
 
     public V remove(K key) {
@@ -75,7 +75,7 @@ public class HashTable<K, V> {
                 }
             }
         }
-        return null; // Возвращаем null, если ключ не найден
+        return null;
     }
 
     public int size() {

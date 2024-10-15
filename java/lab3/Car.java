@@ -23,10 +23,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", year=" + year +
-                '}';
+        return String.format("Car [Brand: %s, Model: %s, Year: %d]", brand, model, year);
     }
 }
