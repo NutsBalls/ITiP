@@ -21,10 +21,9 @@ public class FileCopy {
                 outputStream.write(buffer, 0, bytesRead);
             }
 
-            System.out.println("Копирование завершено успешно.");
-
         } catch (IOException e) {
-            System.out.println("Ошибка при работе с файлами: " + e.getMessage());
+            System.out.println("Ошибка: " + e.getMessage());
+            return ;
         } finally {
             try {
                 if (inputStream != null) {
@@ -32,10 +31,14 @@ public class FileCopy {
                 }
                 if (outputStream != null) {
                     outputStream.close();
+                    //outputStream.write('c');
+
                 }
             } catch (IOException e) {
                 System.out.println("Ошибка при закрытии файлов: " + e.getMessage());
+                return;
             }
         }
+        System.out.println("Копирование завершено успешно.");
     }
 }
