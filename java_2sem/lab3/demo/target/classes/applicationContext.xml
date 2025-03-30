@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="goblin" class="com.example.Goblin">
+        <property name="name" value="Гоблин" />
+        <property name="health" value="100" />
+        <property name="attackPower" value="10" />
+        <property name="gold" value="50" />
+    </bean>
+
+    <bean id="mermaid" class="com.example.Mermaid">
+        <property name="name" value="Русалка" />
+        <property name="health" value="120" />
+        <property name="attackPower" value="15" />
+        <property name="waterPower" value="60" />
+    </bean>
+
+    <bean id="dragon" class="com.example.Dragon">
+        <property name="name" value="Дракон" />
+        <property name="health" value="200" />
+        <property name="attackPower" value="50" />
+        <property name="firePower" value="150" />
+    </bean>
+</beans>
